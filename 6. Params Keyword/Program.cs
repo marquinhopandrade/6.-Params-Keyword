@@ -6,7 +6,14 @@ namespace _6._Params_Keyword
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ParamsMethod("this", " is", " a ", " long", " string.", " I", " have", " no", " idea", " when", " it's", " going", " to", " end", "...");
+        }
+        public static void ParamsMethod(params string[] sentence)
+        {
+            for (int i = 0; i < sentence.Length; i++)
+            {
+                Console.Write(sentence[i] + " ");
+            }
         }
     }
 }
